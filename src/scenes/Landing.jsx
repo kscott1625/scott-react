@@ -1,9 +1,10 @@
 import useMediaQuery from '../hooks/useMediaQuery';
-import SocailMediaIcons from "../components/SocialMediaIcons";
+import SocailMediaIcons from '../components/SocialMediaIcons';
 import { motion } from 'framer-motion';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Kat from '../assets/katherine.jpg';
-import Me from "../assets/mepic.jpg"
+import Me from '../assets/mepic.jpg';
+import Kas from "../assets/kas.jpg"
 
 const Landing = ({ setSelectedPage }) => {
   const isAboveMediumScreens = useMediaQuery('(min-width: 1060px)');
@@ -15,11 +16,11 @@ const Landing = ({ setSelectedPage }) => {
       {/* Image */}
       <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
         {isAboveMediumScreens ? (
-          <div className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px] before:w-full before:max-w-[400px] before:h-full before:border-2 before:border-blue before:z-[-1]">
+          <div className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px] before:w-full before:max-w-[800px] before:h-full before:border-2 before:border-blue before:z-[-1]">
             <img
               alt="profile"
-              className="rounded-t-[400px] hover:filter hover:saturate-200 transition duration-500 z-10 h-full w-full max-w-[400px] md:max-w-[600px]"
-              src={Me}
+              className="rounded-t-[400px] hover:filter hover:saturate-200 transition duration-500 z-10 h-full w-full max-w-[400px] md:max-w-[800px]"
+              src={Kas}
             />
           </div>
         ) : (
@@ -36,7 +37,7 @@ const Landing = ({ setSelectedPage }) => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          transition={{delay:0.3, duration: 0.5 }}
+          transition={{ delay: 0.3, duration: 0.5 }}
           variants={{
             hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 }
@@ -49,11 +50,11 @@ const Landing = ({ setSelectedPage }) => {
               Scott
             </span>
           </p>
-          <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            sjkdcsjcs sjcbsjcbsbvs eufsjcbsjcb dhfgbejhvb sjdkjckjsckj skdchkzjckjzckzj 
-            sdcncbkjbdscbsjkbc
-            xcxmcbcxbvxcbvkcxbvkcxbkxcbk <br></br>
-            sdsdsdvcsv
+          <p className="tracking-wide mt-14 mb-7 text-md text-center md:text-start font-shantell">
+            Hi! I'm Katherine, a front-end developer based in Seattle, Wa. From
+            working in Heathcare for many years, to writing lines of clean code.
+            I'm ecxited to leap into new projects and continue refining my
+            skills
           </p>
         </motion.div>
 
@@ -64,14 +65,14 @@ const Landing = ({ setSelectedPage }) => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay:0.3, duration: 0.5 }}
+          transition={{ delay: 0.3, duration: 0.5 }}
           variants={{
             hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 }
           }}
         >
           <AnchorLink
-            className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold hover:bg-blue hover:text-white transition duration-500"
+            className="bg-yellow text-deep-blue rounded-sm py-3 px-7 font-semibold hover:bg-blue hover:text-white transition duration-500"
             onClick={() => setSelectedPage('contact')}
             href="#contact"
           >
@@ -80,30 +81,29 @@ const Landing = ({ setSelectedPage }) => {
           </AnchorLink>
 
           <AnchorLink
-            className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
+            className="rounded-r-sm bg-blue py-0.5 pr-0.5"
             onClick={() => setSelectedPage('contact')}
             href="#contact"
           >
-            <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center font-playfair px-10">
+            <div className="bg-deep-blue hover:text-yellow transition duration-500 w-full h-full flex items-center justify-center font-playfair px-10">
               {' '}
               Resume
             </div>
           </AnchorLink>
         </motion.div>
-        <motion.div className="flex mt-5 justify-center md:justify-start"
+        <motion.div
+          className="flex mt-5 justify-center md:justify-start"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          transition={{delay:0.4, duration: 0.5 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
           variants={{
             hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 }
-          }}>
-
-<SocailMediaIcons/>
+          }}
+        >
+          <SocailMediaIcons />
         </motion.div>
-
-      
       </div>
     </section>
   );

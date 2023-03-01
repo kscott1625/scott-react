@@ -1,4 +1,6 @@
 import { useState } from "react";
+import menu from "../assets/menu-icon.png"
+import close from "../assets/close-icon.png"
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
 
@@ -20,7 +22,7 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isDesktop = useMediaQuery("(min-width: 768px)");
-  const navbarBackground = isTopOfPage ? "" : "bg-red";
+  const navbarBackground = isTopOfPage ? "" : "bg-teal";
 
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
@@ -54,10 +56,10 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
           </div>
         ) : (
           <button
-            className="rounded-full bg-red p-2"
+            className="rounded-full bg-purple p-2"
             onClick={() => setIsMenuToggled(!isMenuToggled)}
           >
-            <img alt="menu-icon" src="../assets/menu-icon.svg" />
+            <img alt="menu-icon" src={menu} />
           </button>
         )}
 
@@ -67,7 +69,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             {/* CLOSE ICON */}
             <div className="flex justify-end p-12">
               <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                <img alt="close-icon" src="../assets/close-icon.svg" />
+                <img alt="close-icon" src={close} />
               </button>
             </div>
 
