@@ -3,7 +3,6 @@ import SocailMediaIcons from "../components/SocialMediaIcons";
 import { motion } from 'framer-motion';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Kat from '../assets/katherine.jpg';
-import Oreo from '../assets/oreocat.jpg';
 import Me from "../assets/mepic.jpg"
 
 const Landing = ({ setSelectedPage }) => {

@@ -1,4 +1,6 @@
 import LineGradient from "../components/LineGradient";
+import chat from "../assets/contact.jpg"
+
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 
@@ -18,7 +20,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="contact py-48">
+    <section id="contact" className="contact py-40">
       {/* HEADINGS */}
       <motion.div
       className="flex justify-end w-full"
@@ -54,7 +56,7 @@ const Contact = () => {
           }}
           className="basis-1/2 flex justify-center"
         >
-          <img src="../assets/contact-image.jpeg" alt="contact" />
+          <img src={chat} alt="contact" />
         </motion.div>
 
         <motion.div

@@ -1,12 +1,11 @@
 import LineGradient from "../components/LineGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from  "framer-motion";
-import oreo from "../assets/oreocat.jpg"
-
+import cat from "../assets/comcat.jpeg"
 const MySkills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
-    <section id="skills" className="pt-10 pb-24">
+    <section id="skills" >
       {/* HEADER AND IMAGE SECTION */}
       <div className="md:flex md:justify-between md:gap-16 mt-32">
         <motion.div
@@ -39,11 +38,11 @@ const MySkills = () => {
               <img
                 alt="skills"
                 className="z-10"
-                src="assets/Dragon Roll.jpg"
+                src={cat}
               />
             </div>
           ) : (
-            <img alt="skills" className="z-10" src="assets/Dragon Roll.jpg" />
+            <img alt="skills" className="z-10" src={cat} />
           )}
         </div>
       </div>
