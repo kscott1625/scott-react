@@ -3,8 +3,8 @@ import SocailMediaIcons from '../components/SocialMediaIcons';
 import { motion } from 'framer-motion';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Kat from '../assets/katherine.jpg';
-import Me from '../assets/mepic.jpg';
-import Kas from "../assets/kas.jpg"
+import Kas from "../assets/kas.jpg";
+import resume from "../assets/KscottResume.pdf";
 
 const Landing = ({ setSelectedPage }) => {
   const isAboveMediumScreens = useMediaQuery('(min-width: 1060px)');
@@ -80,16 +80,14 @@ const Landing = ({ setSelectedPage }) => {
             Contact Me
           </AnchorLink>
 
-          <AnchorLink
-            className="rounded-r-sm bg-blue py-0.5 pr-0.5"
-            onClick={() => setSelectedPage('contact')}
-            href="#contact"
-          >
+            <div className="rounded-r-sm bg-blue py-0.5 pr-0.5">
             <div className="bg-deep-blue hover:text-yellow transition duration-500 w-full h-full flex items-center justify-center font-playfair px-10">
               {' '}
-              Resume
+              <a href={resume} download> Resume</a>
+
+              </div>
             </div>
-          </AnchorLink>
+
         </motion.div>
         <motion.div
           className="flex mt-5 justify-center md:justify-start"

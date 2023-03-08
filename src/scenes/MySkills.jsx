@@ -7,7 +7,7 @@ const MySkills = () => {
   return (
     <section id="skills">
       {/* HEADER AND IMAGE SECTION */}
-      <div className="md:flex md:justify-between md:gap-16 mt-32">
+      <div className="md:flex md:justify-between md:gap-16 mt-48">
         <motion.div
           className="md:w-1/3"
           initial="hidden"
@@ -33,19 +33,19 @@ const MySkills = () => {
         <div className="mt-16 md:mt-0 ">
           {isAboveLarge ? (
             <div
-              className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
+              className="relative z-0 ml-20 before:rounded-lg before:absolute before:-top-10 before:-left-10
               before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]"
             >
-              <img alt="skills" className="z-10" src={cat} />
+              <img alt="skills" className="z-10 rounded-lg" src="assets/comcat.jpeg" />
             </div>
           ) : (
-            <img alt="skills" className="z-10" src={cat} />
+            <img alt="skills" className="z-10 rounded-lg" src={cat} />
           )}
         </div>
       </div>
 
       {/* SKILLS */}
-      <div className="md:flex md:justify-between mt-16 gap-32 ">
+      <div className="md:flex md:justify-between mt-16 gap-32">
         {/* EXPERIENCE */}
         <motion.div
           className="md:w-1/3 mt-10"
@@ -65,7 +65,7 @@ const MySkills = () => {
                 Experience
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-purple absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 h-32 rounded-lg  bg-purple absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="tracking-wide mt-5">
             I completed Nucamp Coding Bootcamp at the end of 2021 and have been immersed in coding ever since. Wheter it be building my own projects, or building a website for a business. I continue learning daily. 
@@ -91,9 +91,9 @@ const MySkills = () => {
                 Tool Kit
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-purple absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 h-32 rounded-lg bg-purple absolute right-0 top-0 z-[-1]" />
           </div>
-          <p className="font-shantell mt-5 ">
+          <p className="font-shantell mt-5">
             <lu>
               <li>React JS</li>
               <li>JavaScrpit</li>
@@ -102,6 +102,8 @@ const MySkills = () => {
               <li>Bootstrap</li>
               <li>GitHub</li>
               <li>Tailwind CSS</li>
+              <li>Framer Motion</li>
+
             </lu>
           </p>
         </motion.div>
@@ -124,7 +126,7 @@ const MySkills = () => {
                 I Bring
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-purple absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 h-32 rounded-lg bg-purple absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5 mb-20">
             <lu>

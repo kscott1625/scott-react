@@ -9,7 +9,8 @@ module.exports = {
         blue: '#2CBCE9',
         teal: '#51C6F0',
         yellow: '#FFD700',
-        purple: "#A545A8",
+        pale: '#FFEAAF',
+        purple: '#A545A8',
         grey: '#808080',
         'dark-grey': '#757575',
         'opaque-black': 'rgba(0,0,0,0.35)'
@@ -32,9 +33,12 @@ module.exports = {
       }
     },
     screens: {
-      xs: '480px',
-      sm: '768px',
-      md: '1060px'
+      xs: "480px",
+      ss: "620px",
+      sm: "768px",
+      md: "1060px",
+      lg: "1200px",
+      xl: "1700px",
     }
   },
   plugins: []
