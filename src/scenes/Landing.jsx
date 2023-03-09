@@ -45,7 +45,7 @@ const Landing = ({ setSelectedPage }) => {
         >
           <p className="text-6xl font-palyfair z-10 text-center md:text-start">
             Katherine {''}
-            <span className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]">
+            <span className="sx:relative sx:text-deep-blue sx:font-semibold z-20 xs:before:content-brush before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]">
               {' '}
               Scott
             </span>
