@@ -2,12 +2,14 @@ import LineGradient from '../components/LineGradient';
 import useMediaQuery from '../hooks/useMediaQuery';
 import { motion } from 'framer-motion';
 import cat from '../assets/comcat.jpeg';
+
+
 const MySkills = () => {
-  const isAboveLarge = useMediaQuery('(min-width: 1060px)');
+  const isAboveMediumScreens = useMediaQuery('(min-width: 1060px)');
   return (
-    <section id="skills">
+    <section id="skills" className=''>
       {/* HEADER AND IMAGE SECTION */}
-      <div className="md:flex md:justify-between md:gap-16 mt-48">
+      <div className="md:flex md:justify-between md:gap-16 mt-32">
         <motion.div
           className="md:w-1/3"
           initial="hidden"
@@ -26,12 +28,12 @@ const MySkills = () => {
           <p className=" tracking-wide mt-10 mb-7">
             I come from working many years in pysical therapy, so I know about
             hard work and patience. Now transitioning to the code life, I'm
-            excited to dive into something new.
+            excited to dive into something new. Whether it's building my own projects, or building a website for a business. I continue learning daily. 
           </p>
         </motion.div>
 
         <div className="mt-16 md:mt-0 ">
-          {isAboveLarge ? (
+          {isAboveMediumScreens ? (
             <div
               className="relative z-0 ml-20 before:rounded-lg before:absolute before:-top-10 before:-left-10
               before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]"
@@ -68,7 +70,7 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 rounded-lg  bg-purple absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="tracking-wide mt-5">
-            I completed Nucamp Coding Bootcamp at the end of 2021 and have been immersed in coding ever since. Wheter it be building my own projects, or building a website for a business. I continue learning daily. 
+            I completed Nucamp Full Stack Coding Bootcamp at the end of 2021 and have been immersed in coding ever since. 
           </p>
         </motion.div>
 
@@ -93,18 +95,11 @@ const MySkills = () => {
             </div>
             <div className="w-1/2 md:w-3/4 h-32 rounded-lg bg-purple absolute right-0 top-0 z-[-1]" />
           </div>
-          <p className="font-shantell mt-5">
-            <lu>
-              <li>React JS</li>
-              <li>JavaScrpit</li>
-              <li>Html5</li>
-              <li>CSS3</li>
-              <li>Bootstrap</li>
-              <li>GitHub</li>
-              <li>Tailwind CSS</li>
-              <li>Framer Motion</li>
-
-            </lu>
+          <p className=" font-semibold mt-5">
+            
+          HTML5, CSS3, Tailwind CSS, BootStrap, GitHub, JavaScrpit, React, React Native, Framer Motion              
+              
+              
           </p>
         </motion.div>
         {/* WHAT I BRING */}
@@ -128,7 +123,7 @@ const MySkills = () => {
             </div>
             <div className="w-1/2 md:w-3/4 h-32 rounded-lg bg-purple absolute right-0 top-0 z-[-1]" />
           </div>
-          <p className="mt-5 mb-20">
+          <p className="mt-5">
             <lu>
               <li>Communication Skills</li>
               <li>Time Management</li>
