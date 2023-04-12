@@ -86,6 +86,10 @@ const Projects = () => {
             title="Weather"
             subtitle="Weather App created in React, using OpenWeatherMap API to catch current weather data. Using different backgrounds for diffrent weather conditions in different locations."
           />
+           <Project
+            title="Turtlepage"
+            subtitle="This informative webpage was created with html, CSS, and Javascript. It was designed to inform individuals of the importance of sea turtles with information guided by the Sea Turtle Conservatory."
+          />
         </motion.div>
         </div>
       
