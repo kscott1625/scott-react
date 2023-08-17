@@ -15,7 +15,7 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 }
 };
 
-const Project = ({ title, subtitle }) => {
+const Project = ({ title, subtitle, link}) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-pale z-30 flex-col flex justify-center items-center text-center p-16 text-deep-blue font-bold`;
   const projectTitle = title.split(' ').join('-').toLowerCase();
 
@@ -24,6 +24,8 @@ const Project = ({ title, subtitle }) => {
       <div className={overlayStyles}>
         <p className="text-2xl font-shantell">{title}</p>
         <p className="mt-7 font-shantell">{subtitle}</p>
+        <p className="mt-7 font-shantell">{link}</p>
+
       </div>
       <img src={`../assets/${projectTitle}.png`} alt={projectTitle} />
     </motion.div>
@@ -66,30 +68,41 @@ const Projects = () => {
           viewport={{ once: true, amount: 0.2 }}
         >
           {/* ROW 1 */}
-    
           <Project
-            title="Website"
-            subtitle="A medical billing website designed with Bootstrap and made with Javascrpit. Made for a company based in Kirkland, WA. "
+            title="Turtlepage"
+            subtitle="This informative webpage was created with html, CSS, and Javascript. It was designed to inform individuals of the importance of sea turtles with information guided by the Sea Turtle Conservatory."
+            link="https://turtlepagescott.netlify.app/" rel="noreferrer"
+
           />
           
           <Project
             title="Menu"
-            subtitle="A sushi menu made with React with the ability to seperate items between rolls, soup, and sashimi"
+            subtitle="A sushi menu made with React with the ability to seperate items between rolls, soup, and sashimi."
+            link="https://sushi-menuscott.netlify.app/" rel="noreferrer"
+            
+          
           />
 
           {/* ROW 2 */}
           <Project
             title="Books"
             subtitle="Bestseller Book App using React, New York Times API, and Buy Now buttons taking to different market places to purchase. "
+            link="" rel="noreferrer"
+
           />
           <Project
             title="Weather"
-            subtitle="Weather App created in React, using OpenWeatherMap API to catch current weather data. Using different backgrounds for diffrent weather conditions in different locations."
+            subtitle="Weather App created with Javascrpit, using OpenWeatherMap API to catch current weather data. Using different backgrounds for diffrent weather conditions in different locations."
+            link="https://weatherjsscott.netlify.app//" rel="noreferrer"
+
           />
-           <Project
-            title="Turtlepage"
-            subtitle="This informative webpage was created with html, CSS, and Javascript. It was designed to inform individuals of the importance of sea turtles with information guided by the Sea Turtle Conservatory."
+            <Project
+            title="Website"
+            subtitle="A medical billing website designed with Bootstrap and made with Javascrpit. Made for a company based in Kirkland, WA. "
+            link="eastsidebilling.netlify.app/" rel="noreferrer"
+
           />
+       
         </motion.div>
         </div>
       

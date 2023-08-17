@@ -27,8 +27,8 @@ const MySkills = () => {
           <LineGradient width="w-1/3" />
           <p className=" tracking-wide mt-10 mb-7">
             I come from working many years in pysical therapy, so I know about
-            hard work and patience. Now transitioning to the code life, I'm
-            excited to dive into something new. Whether it's building my own projects, or building a website for a business. I continue learning daily. 
+            hard work and patience. Now I'm focused on my career in tech I'm always
+            excited to dive into something new. Whether it's building my own projects, or contributing to a group project I continue learning daily! 
           </p>
         </motion.div>
 
