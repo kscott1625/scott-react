@@ -26,9 +26,9 @@ const MySkills = () => {
           </p>
           <LineGradient width="w-1/3" />
           <p className=" tracking-wide mt-10 mb-7">
-            I come from working many years in pysical therapy, so I know about
-            hard work and patience. Now I'm focused on my career in tech I'm always
-            excited to dive into something new. Whether it's building my own projects, or contributing to a group project I continue learning daily! 
+            I come from working many years in physical therapy, so I know about
+            hard work and patience. Now I'm focused on my career in tech and I'm always
+            excited to dive into something new, whether it's in a group or solo. 
           </p>
         </motion.div>
 
@@ -97,7 +97,7 @@ const MySkills = () => {
           </div>
           <p className=" font-semibold mt-5">
             
-          HTML5, CSS3, Tailwind CSS, BootStrap, GitHub, JavaScrpit, React, React Native, Framer Motion              
+          HTML5, CSS3, Tailwind CSS, BootStrap, GitHub, JavaScript, React, React Native, Framer Motion              
               
               
           </p>
