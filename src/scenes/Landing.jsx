@@ -51,10 +51,8 @@ const Landing = ({ setSelectedPage }) => {
             </span>
           </p>
           <p className="tracking-wide mt-14 mb-7 text-md text-center md:text-start">
-            Hi! I'm Katherine, a Front-End Developer based in Seattle, Wa. From
-            working in Heathcare for many years, to writing lines of clean code.
-            I'm ecxited to leap into new projects and continue refining my
-            skills. 
+            Hi! I'm Katherine, a Front-End Developer based in Seattle, WA. I have spent many years in healthcare and now expanding my talents into writing clean code. I'm excited to leap into new projects and continue refining my
+            skills. I have a passion for creating engaging, entertaining user experiences. 
           </p>
         </motion.div>
 
