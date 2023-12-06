@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Kat from '../assets/katherine.jpg';
 import Kas from "../assets/kas.jpg";
-import resume from "../assets/Kscott.pdf";
+import resume from "../assets/kascottresume.pdf";
 
 const Landing = ({ setSelectedPage }) => {
   const isAboveMediumScreens = useMediaQuery('(min-width: 1060px)');
